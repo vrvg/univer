@@ -1,0 +1,47 @@
+.container {
+	margin: 0 auto;
+	width: 80%;
+	font-family: 'Space Mono';
+}
+
+nav, footer {
+	color: #556B2F;
+	text-align: center;
+	font-family: 'Space Mono';
+}
+
+nav > a {
+	flex: 1;
+	text-align: center;
+	text-decoration: none;
+	color: #556B2F;
+}
+
+@media only screen and (min-width: 768px) {
+	nav { flex-direction: row; }
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
