@@ -3,7 +3,14 @@ nav {
 	flex-direction: column;
 }
 
-nav > a {
+nav > div > a {
+	flex: 1;
+	text-align: center;
+	text-decoration: none;
+	color: #7FFF00;
+}
+
+nav > div > div > div > a {
 	flex: 1;
 	text-align: center;
 	text-decoration: none;

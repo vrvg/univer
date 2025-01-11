@@ -1,0 +1,16 @@
+/* __default.scss */
+
+.container {
+/* defines the width of the container */
+	margin: 0 auto;
+	width: 80%;
+/* font family site wide */
+	font-family: 'Space Mono';
+/* content alignment */
+}
+
+nav, footer {
+	background-color: #333;
+	color: #7FFF00;
+	text-align: center;
+}

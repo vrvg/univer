@@ -1,16 +1,4 @@
-.container {
-	margin: 0 auto;
-	width: 80%;
-	font-family: 'Space Mono';
-}
-
-nav, footer {
-	background-color: #333;
-	color: #7FFF00;
-	text-align: center;
-	font-family: 'Space Mono';
-}
-
+@import 'default';
 @import 'navbar';
 
 footer > a {
