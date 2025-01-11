@@ -1,0 +1,160 @@
+.container {
+	margin: 0 auto;
+	width: 80%;
+	font-family: 'Space Mono';
+}
+
+nav, footer {
+	background-color: #333;
+	color: #7FFF00;
+	text-align: center;
+	font-family: 'Space Mono';
+}
+
+@import 'navbar';
+
+footer > a {
+	flex: 1;
+	text-align: center;
+	color: #7FFF00;
+	text-decoration: none;
+}
+
+footer > small > a {
+	text-decoration: none;
+	color: #7fff00;
+}
+
+@media only screen and (min-width: 768px) {
+	.project-container { display: flex; }
+	.project-container .project-list { width: 20%; }
+	.project-container .project { flex: 1; }
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: left;
+	color: #333;
+}
+
+h3 {
+	text-align: right;
+	color: #333;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* css for p5.js sketches */
+/*
+html, body {
+	display: flex;
+	justify-content: center;
+}
+*/
+
+#Text {
+	background-color: black;
+	border-radius: 10px;
+	color: white;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* css for opensource.html */
+
+.oss {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.oss article {
+	border: 1px solid #ddd;
+	box-shadow: 3px 3px 3px #ddd;
+	margin: 0.5%;
+	padding: 0.5%;
+	width: 30%;
+}
+
+/* changes each tag into a gray button */
+
+a.tag {
+	background-color: #ddd;
+	color: #333;
+	display: inline-block;
+	padding: 0.1em;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+/* style the pagination container */
+
+.pagination {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 1em auto;
+	padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	.pagination {
+		width: 30%;
+	}
+}
+
+.pagination > .page-item {
+	border: 1px solid #ddd;
+	flex: 1;
+	text-align: center;
+	width: 5em;
+}
+
+.pagination .page-link {
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+
+.pagination > .page-item.active {
+	background-color: #333;
+}
+
+.pagination > .page-item.active > .page-link {
+	color: #fff;
+}
+
+.pagination > .page-item.disabled > .page-link {
+	color: #ddd;
+}
+
+figure img {
+	max-width: 100%;
+	height: auto;
+}
