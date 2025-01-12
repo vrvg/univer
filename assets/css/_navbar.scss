@@ -1,3 +1,5 @@
+$nav_txt_color: #7FFF00;
+
 nav {
 	display: flex;
 	flex-direction: column;
@@ -7,14 +9,14 @@ nav > div > a {
 	flex: 1;
 	text-align: center;
 	text-decoration: none;
-	color: #7FFF00;
+	color: $nav_txt_color;
 }
 
 nav > div > div > div > a {
 	flex: 1;
 	text-align: center;
 	text-decoration: none;
-	color: #7FFF00;
+	color: $nav_txt_color;
 }
 
 @media only screen and (min-width: 768px) {

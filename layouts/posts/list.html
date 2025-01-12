@@ -5,6 +5,7 @@
 
 	{{ range .Paginator.Pages }}
 		{{ partial "post_summary.html" . }}
+		<hr>
 	{{ end }}
 
 	{{ template "_internal/pagination.html" . }}

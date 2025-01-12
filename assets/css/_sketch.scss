@@ -1,0 +1,15 @@
+.sketch {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+//	color: #FF00BC;
+}
+
+canvas {
+	display: block;
+//	box-shadow:4px 4px 4px 2px rgb(0 0 0 / 20%);
+	box-shadow: 4px 4px 4px 2px #808080;
+//	box-shadow: #000;
+//	opacity: 0.2;
+}

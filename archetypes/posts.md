@@ -5,6 +5,7 @@ draft = true
 author = 'vange'
 year = '{{ dateFormat "2006" .Date }}'
 month = '{{ dateFormat "2006/01" .Date }}'
+slug = '{{ replace .FileContentBaseName "-" " " | title }}'
 categories = ['personal', 'thoughts']
 tags = ['software', 'html']
 +++

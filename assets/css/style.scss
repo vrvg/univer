@@ -1,5 +1,8 @@
+// Import all of Bootstrap's CSS
+//@import "bootstrap/scss/bootstrap"
 @import 'default';
 @import 'navbar';
+//@import 'sketch';
 
 footer > a {
 	flex: 1;
@@ -24,7 +27,7 @@ h1 {
 }
 
 h2 {
-	text-align: left;
+	text-align: center;
 	color: #333;
 }
 

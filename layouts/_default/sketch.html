@@ -1,12 +1,13 @@
 {{ define "main" }}
-
+<div class="sketch">
+	<!--
 	<div id="Text">
 		<p>this is a console</p>
 	</div>
-	
+	-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/addons/p5.sound.min.js"></script>
 	{{ $js := resources.Get "js/sketch2.js" | minify | fingerprint }}
 	<script src="{{ $js.RelPermalink }}"></script>
-
+</div>
 {{ end }}
