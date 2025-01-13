@@ -1,11 +1,11 @@
 +++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-date = {{ .Date }}
+date = '{{ .Date }}'
 draft = true
 author = 'vange'
 year = '{{ dateFormat "2006" .Date }}'
 month = '{{ dateFormat "2006/01" .Date }}'
-slug = '{{ replace .FileContentBaseName "-" " " | title }}'
+slug = '{{ replace .File.ContentBaseName "-" " " | title }}'
 categories = ['personal', 'thoughts']
 tags = ['software', 'html']
 +++
