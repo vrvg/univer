@@ -1,27 +1,25 @@
 {{ define "main" }}
 <article class="post">
 	<header>
-		<hr>
 		<p class="kicker">{{ .Date.Format "2006-01-02" }}</p>
-		<h2>{{ .Title }}</h2>
+		<h2 class="pacifico-regular">{{ .Title }}</h2>
 		<p class="kicker">
 			{{ math.Round (div (countwords .Content) 200.0) }} min read
 		</p>
-		<p>
-			author{{ .Params.Author }}
+		<p class="kicker">
+			<small>writer/{{ .Params.Author }}</small>
 		</p>
 		<p>
-			posted {{ .Date.Format "2006-01-02"}}
 			<span class="locations">
-				in
+				@
 				{{ range .Params.locations }}
 					<a class="location" href="/locations/{{ . | urlize }}">{{ . }}</a>
 				{{ end }}
 			</span>
 			<span class="tags">
-				in
+				
 				{{ range .Params.tags }}
-					<a class="tag" href="/tags/{{ . | urlize }}">{{ . }}</a>
+					<a class="tag" href="/tags/{{ . | urlize }}">#{{ . }}</a>
 				{{ end }}
 			</span>
 		</p>

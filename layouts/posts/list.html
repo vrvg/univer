@@ -1,7 +1,9 @@
 {{ define "main" }}
 	<h2>{{ .Title }}</h2>
 
+	<div class="landing-page">
 	{{ .Content }}
+	</div>
 
 	{{ range .Paginator.Pages }}
 		{{ partial "post_summary.html" . }}

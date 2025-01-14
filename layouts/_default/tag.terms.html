@@ -1,11 +1,11 @@
 {{ define "main" }}
-	<h2>{{ .Title }}</h2>
+	<h2 class="pacifico-regular">{{ lower .Title }}</h2>
 
 	{{ .Content }}
 
 	{{ range .Data.Terms.Alphabetical }}
 	<p class="tag">
-		<a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+		<a class="tag" href="{{ .Page.Permalink }}">#{{ lower .Page.Title }}</a>
 		<span class="count">({{ .Count }})</span>
 	</p>
 	{{ end }}

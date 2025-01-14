@@ -1,5 +1,88 @@
 /* __default.scss */
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.space-mono-regular {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.noto-sans-mono-body {
+  font-family: "Noto Sans Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.noto-sans-mono-h2 {
+  font-family: "Noto Sans Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap');
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.noto-emoji-body {
+  font-family: "Noto Emoji", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// end of type
+
+.landing-page {
+	text-align: center;
+}
+
+.landing-page > h2 {
+	font-family: 'Pacifico';
+}
+
+.landing-page > p {
+	font-family: 'Noto Sans Mono'
+}
+
 .container {
 /* defines the width of the container */
 	margin: 0 auto;
@@ -12,6 +95,19 @@
 
 nav, footer {
 	background-color: #333;
-	color: #7FFF00;
+	color: #ffd700;
 	text-align: center;
+}
+
+h3 > a {
+	color: #333;
+	text-decoration: none;
+}
+
+li > a {
+	color: #333;
+}
+
+a:hover {
+	color: #ffd700;
 }

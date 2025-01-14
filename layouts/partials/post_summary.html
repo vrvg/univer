@@ -1,17 +1,14 @@
 <article>
 	<header>
-		<h3>
+		<h3 class="pacifico-regular">
 			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 		</h3>
 		<time>
 			{{ .Date | dateFormat "2006.01.02 Mon"}}
-			
-			<!--{{ .Date | dateFormat "2006" }}
-			{{ .Date | dateFormat "January" }}
-			{{ .Date | dateFormat "2" }}
-			{{ .Date | dateFormat "Monday" }}-->
 		</time>
 	</header>
 
+	<div class="noto-sans-mono-body">
 	{{ .Summary }}
+	</div>
 </article>
